@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+html {
+    box-sizing:border-box;
+
+}
+body{
+    margin : 0;
+    min-height:100 vh;
+    background-image: url(oriental-tiles.png);
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.quote-container{
+    width:auto;
+    max-width:900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(56, 105, 126, 0.65);
+    box-shadow: 0 10px 10px 10px 10px rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text{
+    font-size:2.75rem;
+}
+.long-quote{
+    font-size:1.75rem
+}
+#quote-icon{
+    font-size:4rem;
+}
+.quote-author{
+margin-top:15px;
+font-size:2rem;
+font-weight: 400;
+font-style: italic;
+}
+.buttons-container{
+    margin-top:15px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    
+}
+button {
+    cursor:pointer;
+    font-size:1.2rem;
+    height:2.5rem;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    background-color: #333;
+    outline: none;
+    padding:0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+    
+}
+.fa-twitter{
+    font-size:1.5rem;
+}
+.twitter-button:hover{
+    color:#38a1f3;
+}
+button:active{
+    transform: translate(0,0.3rem);
+    box-shadow:none;
+}
+/* media queries */
+@media screen and (max-width:1000px){
+    .quote-container{
+        margin:auto 10px;
+        min-width: 80%;
+    }
+    .quote-text{
+        font-size: 1.75rem;
+    }
+}
